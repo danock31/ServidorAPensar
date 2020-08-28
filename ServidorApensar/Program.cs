@@ -73,7 +73,7 @@ namespace ServidorApensar
 
                 if (flag == true)
                 {
-                    broadcastBytes = Encoding.ASCII.GetBytes(" Dice : " + uName+" " + msg);
+                    broadcastBytes = Encoding.ASCII.GetBytes(" Dice : " + uName+" :" + msg);
                 }
                 else
                 {
