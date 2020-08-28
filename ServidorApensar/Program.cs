@@ -73,7 +73,7 @@ namespace ServidorApensar
 
                 if (flag == true)
                 {
-                    broadcastBytes = Encoding.ASCII.GetBytes(uName + " Dice : " + msg);
+                    broadcastBytes = Encoding.ASCII.GetBytes(" Dice : " + uName+" " + msg);
                 }
                 else
                 {
@@ -140,42 +140,6 @@ namespace ServidorApensar
                     MandarGanador("Acertaste ", nombre[0], true);
                     puntoajugadoruno++;
                 }
-                else if (selec[0] == "1" && selec[1] == "1")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-                else if (selec[0] == "2" && selec[1] == "2")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-                else if (selec[0] == "3" && selec[1] == "3")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-                else if (selec[0] == "4" && selec[1] == "4")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-                else if (selec[0] == "5" && selec[1] == "5")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-                else if (selec[0] == "6" && selec[1] == "6")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-                else if (selec[0] == "7" && selec[1] == "7")
-                {
-                    MandarGanador("Empates ", "Ambos", true);
-                    puntoajugadoruno++;
-                }
-
                  if (selec[0] == "Gano" && selec[1]=="NoTermino")
                 {
                     MandarGanador("Gano", nombre[0], true);
